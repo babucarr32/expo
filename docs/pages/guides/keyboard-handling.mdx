@@ -32,7 +32,7 @@ The `KeyboardAvoidingView` is a component that automatically adjusts a keyboard'
 Android and iOS interact with the `behavior` property differently. On iOS, `padding` is usually what works best, and for Android, just having the `KeyboardAvoidingView` prevents covering the input. This is why the following example uses `undefined` for Android. Playing around with the `behavior` is a good practice since a different option could work best for your app.
 
 ```tsx HomeScreen.tsx
-import { KeyboardAvoidingView, TextInput } from 'react-native';
+import { KeyboardAvoidingView, Platform, TextInput } from 'react-native';
 
 export default function HomeScreen() {
   return (
